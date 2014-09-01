@@ -11,6 +11,8 @@ SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
+Patches:
+    - 0001-Find-the-right-Phonon-version.patch
 
 RpmLintIgnore:
     - devel-file-in-non-devel-package

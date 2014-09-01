@@ -17,6 +17,7 @@ URL:        http://www.kde.org
 Source0:    %{name}-%{version}.tar.xz
 Source100:  phonon-qt5-gstreamer.yaml
 Source101:  phonon-qt5-gstreamer-rpmlintrc
+Patch0:     0001-Find-the-right-Phonon-version.patch
 Requires:   kf5-filesystem
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
@@ -45,12 +46,14 @@ Multimedia framework api
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
+# 0001-Find-the-right-Phonon-version.patch
+%patch0 -p1
 # >> setup
 # << setup
 
 %build
 # >> build pre
-%kf5_make
+%kf5_make -DPHONON_BUILD_PHONON4QT5:BOOL=ON
 # << build pre
 
 
