@@ -26,8 +26,6 @@ PkgBR:
     - kf5-rpm-macros
     - qt5-tools
     - phonon-qt5-devel
-    - gstreamer-devel
-    - gstreamer-plugins-base-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -40,6 +38,8 @@ PkgConfigBR:
     - Qt5OpenGL
     - glib-2.0
     - libxml-2.0
+    - gstreamer-1.0
+    - gstreamer-plugins-base-1.0
 Requires:
     - kf5-filesystem
 
