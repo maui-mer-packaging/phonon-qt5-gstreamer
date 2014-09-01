@@ -50,11 +50,13 @@ Multimedia framework api
 
 %build
 # >> build pre
+%kf5_make
 # << build pre
 
 
 
 # >> build post
+%kf5_make_install
 # << build post
 
 %install
