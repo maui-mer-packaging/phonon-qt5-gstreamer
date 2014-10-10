@@ -9,7 +9,7 @@ Name:       phonon-qt5-gstreamer
 # << macros
 
 Summary:    Multimedia framework api
-Version:    4.8.0
+Version:    4.8.50
 Release:    1
 Group:      System/Base
 License:    GPLv2+
